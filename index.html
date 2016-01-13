@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+<head>
+    <meta charset="utf-8">
+    <title>Fred Nyambati</title>
+    <link rel="stylesheet" type="text/css" href="dist/sweetalert.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Cantarell:400,700italic|Lobster|Fugaz+One|Julius+Sans+One|Indie+Flower' rel='stylesheet' type='text/css'>
+    <link href="/img/favicon.ico" rel="icon" type="image/x-icon" />
+</head>
+
+<body ng-controller="nav">
+    <div class="bg">
+        <header>
+            <div class="myName">
+                <div nav-directive></div>
+            </div>
+            <div class="navBar">
+                <a ui-sref="home">Home</a>
+                <a ui-sref="about">About</a>
+                <a ui-sref="projects">Projects</a>
+                <a ui-sref="contact">Contact</a>
+
+            </div>
+        </header>
+        <ui-view></ui-view>
+
+
+
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/navbarCtrl.js"></script>
+    <script src="js/directive.js"></script>
+</body>
+
+</html>
