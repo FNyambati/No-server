@@ -334,7 +334,7 @@
             font-size: 30px;
         }
     }
-    @media screen and (max-width: 680px) {
+    @media screen and (max-width: 680px) and (min-device-width : 375px){
         html {
             padding-bottom: 0;
         }
@@ -389,3 +389,13 @@
             font-size: 15px;
         }
     }
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) {
+    .myName {
+        display: none;
+    }
+    .navBar {
+        text-align: center;
+    }
+    .icons
+    }
+}
